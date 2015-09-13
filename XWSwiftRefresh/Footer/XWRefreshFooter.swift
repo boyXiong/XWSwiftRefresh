@@ -8,7 +8,6 @@
 
 import UIKit
 
-typealias colsureType = ()->()
 
 /** footer状态 */
 enum XWRefreshFooterState:Int{
@@ -22,6 +21,9 @@ enum XWRefreshFooterState:Int{
 
 
 class XWRefreshFooter: XWRefreshComponent {
+    
+    typealias colsureType = ()->()
+
     
     //MARK: 公有的 提供外界访问的
     
