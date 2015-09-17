@@ -28,3 +28,4 @@
 ##### 感谢 MJRefresh AFNetwork SDWebImage KxMovie GPUImage等 好的开源框架
 ##### 感谢 KSImageNamed ,VV 等优秀的插件
 ##### 感谢开源，回报开源
+[个人博客技术分享](http://blog.csdn.net/boyXiong)
