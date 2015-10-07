@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2B13641BC4D340005E310F /* XWConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13521BC4D340005E310F /* XWConst.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B13651BC4D340005E310F /* XWRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13531BC4D340005E310F /* XWRefreshComponent.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B13661BC4D340005E310F /* XWShortcutMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13541BC4D340005E310F /* XWShortcutMethod.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B13671BC4D340005E310F /* XWRefreshAutoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13561BC4D340005E310F /* XWRefreshAutoFooter.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B13681BC4D340005E310F /* XWRefreshAutoNormalFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13571BC4D340005E310F /* XWRefreshAutoNormalFooter.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B13691BC4D340005E310F /* XWRefreshAutoStateFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13581BC4D340005E310F /* XWRefreshAutoStateFooter.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B136A1BC4D340005E310F /* XWRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13591BC4D340005E310F /* XWRefreshFooter.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B136B1BC4D340005E310F /* XWRefreshGifHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B135B1BC4D340005E310F /* XWRefreshGifHeader.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B136C1BC4D340005E310F /* XWRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B135C1BC4D340005E310F /* XWRefreshHeader.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B136D1BC4D340005E310F /* XWRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B135D1BC4D340005E310F /* XWRefreshNormalHeader.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B136E1BC4D340005E310F /* XWRefreshStateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B135E1BC4D340005E310F /* XWRefreshStateHeader.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B136F1BC4D340005E310F /* UIScrollViewExtension-XW.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13601BC4D340005E310F /* UIScrollViewExtension-XW.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2B13701BC4D340005E310F /* xw_icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA2B13621BC4D340005E310F /* xw_icon.bundle */; settings = {ASSET_TAGS = (); }; };
 		EA435B2C1BA5011700C6C2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B2B1BA5011700C6C2E2 /* AppDelegate.swift */; };
 		EA435B2E1BA5011700C6C2E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B2D1BA5011700C6C2E2 /* ViewController.swift */; };
 		EA435B311BA5011700C6C2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA435B2F1BA5011700C6C2E2 /* Main.storyboard */; };
 		EA435B331BA5011700C6C2E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA435B321BA5011700C6C2E2 /* Assets.xcassets */; };
 		EA435B361BA5011700C6C2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA435B341BA5011700C6C2E2 /* LaunchScreen.storyboard */; };
-		EA435B681BA5019D00C6C2E2 /* XWConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B5B1BA5019D00C6C2E2 /* XWConst.swift */; settings = {ASSET_TAGS = (); }; };
-		EA435B691BA5019D00C6C2E2 /* XWRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B5C1BA5019D00C6C2E2 /* XWRefreshComponent.swift */; settings = {ASSET_TAGS = (); }; };
-		EA435B6A1BA5019D00C6C2E2 /* XWRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B5E1BA5019D00C6C2E2 /* XWRefreshFooter.swift */; settings = {ASSET_TAGS = (); }; };
-		EA435B6B1BA5019D00C6C2E2 /* XWRefreshLegendFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B5F1BA5019D00C6C2E2 /* XWRefreshLegendFooter.swift */; settings = {ASSET_TAGS = (); }; };
-		EA435B6C1BA5019D00C6C2E2 /* XWRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B611BA5019D00C6C2E2 /* XWRefreshHeader.swift */; settings = {ASSET_TAGS = (); }; };
-		EA435B6D1BA5019D00C6C2E2 /* XWRefreshLegendHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B621BA5019D00C6C2E2 /* XWRefreshLegendHeader.swift */; settings = {ASSET_TAGS = (); }; };
-		EA435B6E1BA5019D00C6C2E2 /* UIScrollViewExtension-XW.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B641BA5019D00C6C2E2 /* UIScrollViewExtension-XW.swift */; settings = {ASSET_TAGS = (); }; };
-		EA435B6F1BA5019D00C6C2E2 /* UIViewExtension-XW.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B651BA5019D00C6C2E2 /* UIViewExtension-XW.swift */; settings = {ASSET_TAGS = (); }; };
-		EA435B701BA5019D00C6C2E2 /* xw_icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA435B671BA5019D00C6C2E2 /* xw_icon.bundle */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA2B13521BC4D340005E310F /* XWConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWConst.swift; sourceTree = "<group>"; };
+		EA2B13531BC4D340005E310F /* XWRefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshComponent.swift; sourceTree = "<group>"; };
+		EA2B13541BC4D340005E310F /* XWShortcutMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWShortcutMethod.swift; sourceTree = "<group>"; };
+		EA2B13561BC4D340005E310F /* XWRefreshAutoFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshAutoFooter.swift; sourceTree = "<group>"; };
+		EA2B13571BC4D340005E310F /* XWRefreshAutoNormalFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshAutoNormalFooter.swift; sourceTree = "<group>"; };
+		EA2B13581BC4D340005E310F /* XWRefreshAutoStateFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshAutoStateFooter.swift; sourceTree = "<group>"; };
+		EA2B13591BC4D340005E310F /* XWRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshFooter.swift; sourceTree = "<group>"; };
+		EA2B135B1BC4D340005E310F /* XWRefreshGifHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshGifHeader.swift; sourceTree = "<group>"; };
+		EA2B135C1BC4D340005E310F /* XWRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshHeader.swift; sourceTree = "<group>"; };
+		EA2B135D1BC4D340005E310F /* XWRefreshNormalHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshNormalHeader.swift; sourceTree = "<group>"; };
+		EA2B135E1BC4D340005E310F /* XWRefreshStateHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshStateHeader.swift; sourceTree = "<group>"; };
+		EA2B13601BC4D340005E310F /* UIScrollViewExtension-XW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollViewExtension-XW.swift"; sourceTree = "<group>"; };
+		EA2B13621BC4D340005E310F /* xw_icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = xw_icon.bundle; sourceTree = "<group>"; };
+		EA2B13631BC4D340005E310F /* XWSwiftRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWSwiftRefresh.h; sourceTree = "<group>"; };
 		EA435B281BA5011700C6C2E2 /* XWSwiftRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWSwiftRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA435B2B1BA5011700C6C2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA435B2D1BA5011700C6C2E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,15 +68,6 @@
 		EA435B371BA5011700C6C2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA435B3C1BA5011700C6C2E2 /* XWSwiftRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XWSwiftRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA435B471BA5011800C6C2E2 /* XWSwiftRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XWSwiftRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA435B5B1BA5019D00C6C2E2 /* XWConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWConst.swift; sourceTree = "<group>"; };
-		EA435B5C1BA5019D00C6C2E2 /* XWRefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshComponent.swift; sourceTree = "<group>"; };
-		EA435B5E1BA5019D00C6C2E2 /* XWRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshFooter.swift; sourceTree = "<group>"; };
-		EA435B5F1BA5019D00C6C2E2 /* XWRefreshLegendFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshLegendFooter.swift; sourceTree = "<group>"; };
-		EA435B611BA5019D00C6C2E2 /* XWRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshHeader.swift; sourceTree = "<group>"; };
-		EA435B621BA5019D00C6C2E2 /* XWRefreshLegendHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshLegendHeader.swift; sourceTree = "<group>"; };
-		EA435B641BA5019D00C6C2E2 /* UIScrollViewExtension-XW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollViewExtension-XW.swift"; sourceTree = "<group>"; };
-		EA435B651BA5019D00C6C2E2 /* UIViewExtension-XW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewExtension-XW.swift"; sourceTree = "<group>"; };
-		EA435B671BA5019D00C6C2E2 /* xw_icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = xw_icon.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA2B13501BC4D340005E310F /* XWSwiftRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B13511BC4D340005E310F /* common */,
+				EA2B13551BC4D340005E310F /* Footer */,
+				EA2B135A1BC4D340005E310F /* Header */,
+				EA2B135F1BC4D340005E310F /* Helper */,
+				EA2B13611BC4D340005E310F /* Icon */,
+				EA2B13631BC4D340005E310F /* XWSwiftRefresh.h */,
+			);
+			name = XWSwiftRefresh;
+			path = ../../XWSwiftRefresh;
+			sourceTree = "<group>";
+		};
+		EA2B13511BC4D340005E310F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B13521BC4D340005E310F /* XWConst.swift */,
+				EA2B13531BC4D340005E310F /* XWRefreshComponent.swift */,
+				EA2B13541BC4D340005E310F /* XWShortcutMethod.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		EA2B13551BC4D340005E310F /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B13561BC4D340005E310F /* XWRefreshAutoFooter.swift */,
+				EA2B13571BC4D340005E310F /* XWRefreshAutoNormalFooter.swift */,
+				EA2B13581BC4D340005E310F /* XWRefreshAutoStateFooter.swift */,
+				EA2B13591BC4D340005E310F /* XWRefreshFooter.swift */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		EA2B135A1BC4D340005E310F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B135B1BC4D340005E310F /* XWRefreshGifHeader.swift */,
+				EA2B135C1BC4D340005E310F /* XWRefreshHeader.swift */,
+				EA2B135D1BC4D340005E310F /* XWRefreshNormalHeader.swift */,
+				EA2B135E1BC4D340005E310F /* XWRefreshStateHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		EA2B135F1BC4D340005E310F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B13601BC4D340005E310F /* UIScrollViewExtension-XW.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EA2B13611BC4D340005E310F /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B13621BC4D340005E310F /* xw_icon.bundle */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
 		EA435B1F1BA5011700C6C2E2 = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +178,7 @@
 		EA435B2A1BA5011700C6C2E2 /* XWSwiftRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				EA435B591BA5019D00C6C2E2 /* XWSwiftRefresh */,
+				EA2B13501BC4D340005E310F /* XWSwiftRefresh */,
 				EA435B2B1BA5011700C6C2E2 /* AppDelegate.swift */,
 				EA435B2D1BA5011700C6C2E2 /* ViewController.swift */,
 				EA435B2F1BA5011700C6C2E2 /* Main.storyboard */,
@@ -116,62 +187,6 @@
 				EA435B371BA5011700C6C2E2 /* Info.plist */,
 			);
 			path = XWSwiftRefresh;
-			sourceTree = "<group>";
-		};
-		EA435B591BA5019D00C6C2E2 /* XWSwiftRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				EA435B5A1BA5019D00C6C2E2 /* common */,
-				EA435B5D1BA5019D00C6C2E2 /* Footer */,
-				EA435B601BA5019D00C6C2E2 /* Header */,
-				EA435B631BA5019D00C6C2E2 /* Helper */,
-				EA435B661BA5019D00C6C2E2 /* Icon */,
-			);
-			path = XWSwiftRefresh;
-			sourceTree = "<group>";
-		};
-		EA435B5A1BA5019D00C6C2E2 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				EA435B5B1BA5019D00C6C2E2 /* XWConst.swift */,
-				EA435B5C1BA5019D00C6C2E2 /* XWRefreshComponent.swift */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		EA435B5D1BA5019D00C6C2E2 /* Footer */ = {
-			isa = PBXGroup;
-			children = (
-				EA435B5E1BA5019D00C6C2E2 /* XWRefreshFooter.swift */,
-				EA435B5F1BA5019D00C6C2E2 /* XWRefreshLegendFooter.swift */,
-			);
-			path = Footer;
-			sourceTree = "<group>";
-		};
-		EA435B601BA5019D00C6C2E2 /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				EA435B611BA5019D00C6C2E2 /* XWRefreshHeader.swift */,
-				EA435B621BA5019D00C6C2E2 /* XWRefreshLegendHeader.swift */,
-			);
-			path = Header;
-			sourceTree = "<group>";
-		};
-		EA435B631BA5019D00C6C2E2 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				EA435B641BA5019D00C6C2E2 /* UIScrollViewExtension-XW.swift */,
-				EA435B651BA5019D00C6C2E2 /* UIViewExtension-XW.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		EA435B661BA5019D00C6C2E2 /* Icon */ = {
-			isa = PBXGroup;
-			children = (
-				EA435B671BA5019D00C6C2E2 /* xw_icon.bundle */,
-			);
-			path = Icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA435B361BA5011700C6C2E2 /* LaunchScreen.storyboard in Resources */,
-				EA435B701BA5019D00C6C2E2 /* xw_icon.bundle in Resources */,
+				EA2B13701BC4D340005E310F /* xw_icon.bundle in Resources */,
 				EA435B331BA5011700C6C2E2 /* Assets.xcassets in Resources */,
 				EA435B311BA5011700C6C2E2 /* Main.storyboard in Resources */,
 			);
@@ -305,16 +320,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA435B6E1BA5019D00C6C2E2 /* UIScrollViewExtension-XW.swift in Sources */,
-				EA435B6F1BA5019D00C6C2E2 /* UIViewExtension-XW.swift in Sources */,
-				EA435B691BA5019D00C6C2E2 /* XWRefreshComponent.swift in Sources */,
-				EA435B6C1BA5019D00C6C2E2 /* XWRefreshHeader.swift in Sources */,
+				EA2B136E1BC4D340005E310F /* XWRefreshStateHeader.swift in Sources */,
+				EA2B13691BC4D340005E310F /* XWRefreshAutoStateFooter.swift in Sources */,
+				EA2B13671BC4D340005E310F /* XWRefreshAutoFooter.swift in Sources */,
+				EA2B13651BC4D340005E310F /* XWRefreshComponent.swift in Sources */,
 				EA435B2E1BA5011700C6C2E2 /* ViewController.swift in Sources */,
-				EA435B6A1BA5019D00C6C2E2 /* XWRefreshFooter.swift in Sources */,
-				EA435B6D1BA5019D00C6C2E2 /* XWRefreshLegendHeader.swift in Sources */,
-				EA435B681BA5019D00C6C2E2 /* XWConst.swift in Sources */,
-				EA435B6B1BA5019D00C6C2E2 /* XWRefreshLegendFooter.swift in Sources */,
+				EA2B13641BC4D340005E310F /* XWConst.swift in Sources */,
 				EA435B2C1BA5011700C6C2E2 /* AppDelegate.swift in Sources */,
+				EA2B136D1BC4D340005E310F /* XWRefreshNormalHeader.swift in Sources */,
+				EA2B136A1BC4D340005E310F /* XWRefreshFooter.swift in Sources */,
+				EA2B13661BC4D340005E310F /* XWShortcutMethod.swift in Sources */,
+				EA2B136C1BC4D340005E310F /* XWRefreshHeader.swift in Sources */,
+				EA2B136B1BC4D340005E310F /* XWRefreshGifHeader.swift in Sources */,
+				EA2B136F1BC4D340005E310F /* UIScrollViewExtension-XW.swift in Sources */,
+				EA2B13681BC4D340005E310F /* XWRefreshAutoNormalFooter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
