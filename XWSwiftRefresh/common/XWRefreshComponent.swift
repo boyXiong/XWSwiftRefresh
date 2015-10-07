@@ -74,6 +74,10 @@ typealias XWRefreshComponentRefreshingClosure = ()->()
     
        
     //MARK 方法
+    //提供方便，有提示
+    func addCallBack(block:XWRefreshComponentRefreshingClosure){
+        self.refreshingClosure = block
+    }
     
     
     //MARK: 遍历构造方法

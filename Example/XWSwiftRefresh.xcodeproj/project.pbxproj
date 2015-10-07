@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2556D31BC53E630081F7D4 /* XWExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2556D21BC53E630081F7D4 /* XWExampleVC.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2556D51BC542D40081F7D4 /* XWDisplayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2556D41BC542D40081F7D4 /* XWDisplayTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EA2556D71BC555ED0081F7D4 /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2556D61BC555ED0081F7D4 /* UIVIewControllerExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		EA2B13641BC4D340005E310F /* XWConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13521BC4D340005E310F /* XWConst.swift */; settings = {ASSET_TAGS = (); }; };
 		EA2B13651BC4D340005E310F /* XWRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13531BC4D340005E310F /* XWRefreshComponent.swift */; settings = {ASSET_TAGS = (); }; };
 		EA2B13661BC4D340005E310F /* XWShortcutMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13541BC4D340005E310F /* XWShortcutMethod.swift */; settings = {ASSET_TAGS = (); }; };
@@ -21,7 +24,6 @@
 		EA2B136F1BC4D340005E310F /* UIScrollViewExtension-XW.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B13601BC4D340005E310F /* UIScrollViewExtension-XW.swift */; settings = {ASSET_TAGS = (); }; };
 		EA2B13701BC4D340005E310F /* xw_icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA2B13621BC4D340005E310F /* xw_icon.bundle */; settings = {ASSET_TAGS = (); }; };
 		EA435B2C1BA5011700C6C2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B2B1BA5011700C6C2E2 /* AppDelegate.swift */; };
-		EA435B2E1BA5011700C6C2E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA435B2D1BA5011700C6C2E2 /* ViewController.swift */; };
 		EA435B311BA5011700C6C2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA435B2F1BA5011700C6C2E2 /* Main.storyboard */; };
 		EA435B331BA5011700C6C2E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA435B321BA5011700C6C2E2 /* Assets.xcassets */; };
 		EA435B361BA5011700C6C2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA435B341BA5011700C6C2E2 /* LaunchScreen.storyboard */; };
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA2556D21BC53E630081F7D4 /* XWExampleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWExampleVC.swift; sourceTree = "<group>"; };
+		EA2556D41BC542D40081F7D4 /* XWDisplayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWDisplayTableViewController.swift; sourceTree = "<group>"; };
+		EA2556D61BC555ED0081F7D4 /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtension.swift; sourceTree = "<group>"; };
 		EA2B13521BC4D340005E310F /* XWConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWConst.swift; sourceTree = "<group>"; };
 		EA2B13531BC4D340005E310F /* XWRefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshComponent.swift; sourceTree = "<group>"; };
 		EA2B13541BC4D340005E310F /* XWShortcutMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWShortcutMethod.swift; sourceTree = "<group>"; };
@@ -61,7 +66,6 @@
 		EA2B13631BC4D340005E310F /* XWSwiftRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWSwiftRefresh.h; sourceTree = "<group>"; };
 		EA435B281BA5011700C6C2E2 /* XWSwiftRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWSwiftRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA435B2B1BA5011700C6C2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA435B2D1BA5011700C6C2E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA435B301BA5011700C6C2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA435B321BA5011700C6C2E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA435B351BA5011700C6C2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,6 +99,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA2556CE1BC53CCB0081F7D4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EA2556D11BC53E480081F7D4 /* ExampleVC */,
+				EA2556CF1BC53CD30081F7D4 /* Extension */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EA2556CF1BC53CD30081F7D4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA2556D61BC555ED0081F7D4 /* UIVIewControllerExtension.swift */,
+			);
+			name = Extension;
+			path = ../Extension;
+			sourceTree = "<group>";
+		};
+		EA2556D01BC53D3E0081F7D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA435B2B1BA5011700C6C2E2 /* AppDelegate.swift */,
+				EA435B2F1BA5011700C6C2E2 /* Main.storyboard */,
+				EA435B321BA5011700C6C2E2 /* Assets.xcassets */,
+				EA435B341BA5011700C6C2E2 /* LaunchScreen.storyboard */,
+				EA435B371BA5011700C6C2E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA2556D11BC53E480081F7D4 /* ExampleVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA2556D21BC53E630081F7D4 /* XWExampleVC.swift */,
+				EA2556D41BC542D40081F7D4 /* XWDisplayTableViewController.swift */,
+			);
+			path = ExampleVC;
+			sourceTree = "<group>";
+		};
 		EA2B13501BC4D340005E310F /* XWSwiftRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,13 +221,9 @@
 		EA435B2A1BA5011700C6C2E2 /* XWSwiftRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				EA2556CE1BC53CCB0081F7D4 /* Classes */,
+				EA2556D01BC53D3E0081F7D4 /* Supporting Files */,
 				EA2B13501BC4D340005E310F /* XWSwiftRefresh */,
-				EA435B2B1BA5011700C6C2E2 /* AppDelegate.swift */,
-				EA435B2D1BA5011700C6C2E2 /* ViewController.swift */,
-				EA435B2F1BA5011700C6C2E2 /* Main.storyboard */,
-				EA435B321BA5011700C6C2E2 /* Assets.xcassets */,
-				EA435B341BA5011700C6C2E2 /* LaunchScreen.storyboard */,
-				EA435B371BA5011700C6C2E2 /* Info.plist */,
 			);
 			path = XWSwiftRefresh;
 			sourceTree = "<group>";
@@ -323,15 +362,17 @@
 				EA2B136E1BC4D340005E310F /* XWRefreshStateHeader.swift in Sources */,
 				EA2B13691BC4D340005E310F /* XWRefreshAutoStateFooter.swift in Sources */,
 				EA2B13671BC4D340005E310F /* XWRefreshAutoFooter.swift in Sources */,
+				EA2556D31BC53E630081F7D4 /* XWExampleVC.swift in Sources */,
 				EA2B13651BC4D340005E310F /* XWRefreshComponent.swift in Sources */,
-				EA435B2E1BA5011700C6C2E2 /* ViewController.swift in Sources */,
 				EA2B13641BC4D340005E310F /* XWConst.swift in Sources */,
 				EA435B2C1BA5011700C6C2E2 /* AppDelegate.swift in Sources */,
 				EA2B136D1BC4D340005E310F /* XWRefreshNormalHeader.swift in Sources */,
 				EA2B136A1BC4D340005E310F /* XWRefreshFooter.swift in Sources */,
 				EA2B13661BC4D340005E310F /* XWShortcutMethod.swift in Sources */,
+				EA2556D71BC555ED0081F7D4 /* UIVIewControllerExtension.swift in Sources */,
 				EA2B136C1BC4D340005E310F /* XWRefreshHeader.swift in Sources */,
 				EA2B136B1BC4D340005E310F /* XWRefreshGifHeader.swift in Sources */,
+				EA2556D51BC542D40081F7D4 /* XWDisplayTableViewController.swift in Sources */,
 				EA2B136F1BC4D340005E310F /* UIScrollViewExtension-XW.swift in Sources */,
 				EA2B13681BC4D340005E310F /* XWRefreshAutoNormalFooter.swift in Sources */,
 			);
