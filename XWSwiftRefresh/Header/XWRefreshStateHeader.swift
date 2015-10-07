@@ -43,11 +43,7 @@ class XWRefreshStateHeader: XWRefreshHeader {
     
     /** 设置文件显示状态 */
     private func setTitle(title:String, state:XWRefreshState){
-        
-//        self.stateTitles[state] = title;
         self.stateLabel.text = self.stateTitles[self.state];
-        
-
     }
     
     

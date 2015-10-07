@@ -2,8 +2,8 @@
 //  XWRefreshGifHeader.swift
 //  XWSwiftRefresh
 //
-//  Created by key on 15/10/5.
-//  Copyright © 2015年 key. All rights reserved.
+//  Created by Xiong Wei on 15/10/5.
+//  Copyright © 2015年 Xiong Wei. All rights reserved.
 //
 
 import UIKit
@@ -83,7 +83,8 @@ class XWRefreshGifHeader: XWRefreshStateHeader {
     }
     
     private func switchStateDoSomething(state:XWRefreshState){
-        
+
+               
         if !(state == XWRefreshState.Pulling || state == XWRefreshState.Refreshing) { return }
         
         if let images = self.stateImages[state] {
