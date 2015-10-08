@@ -3,11 +3,13 @@ s.name         = 'XWSwiftRefresh'
 s.version      = '0.1.2'
 s.summary      = 'The easiest way to use pull-to-refresh with Swift2.0 program language'
 s.homepage     = 'https://github.com/boyXiong/XWSwiftRefresh'
-s.license      = 'MIT'
+s.screenshots  = 'https://raw.githubusercontent.com/boyXiong/raw/master/picture/XWSwiftRefresh/displayHowToUser.gif'
+s.license      = { :type => "MIT", :file => "LICENSE" }
 s.authors      = {'boyXiong' => 'relv@qq.com'}
-s.platform     = :ios, '8.0'
+s.ios.deployment_target = "8.0"
 s.source       = {:git => 'https://github.com/boyXiong/XWSwiftRefresh.git', :tag => s.version}
 s.source_files = 'XWSwiftRefresh/**/*.{swift}'
 s.resource     = 'XWSwiftRefresh/Icon/xw_icon.bundle'
 s.requires_arc = true
+s.framework = 'UIKit'
 end
