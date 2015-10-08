@@ -101,9 +101,7 @@ class XWDisplayTableViewController: UITableViewController {
         headerView.automaticallyChangeAlpha = true
         
         self.tableView.headerView = headerView
-        
-        let btn = UIButton()
-        btn.addTarget(<#T##target: AnyObject?##AnyObject?#>, action: <#T##Selector#>, forControlEvents: <#T##UIControlEvents#>)
+                
     }
     
     

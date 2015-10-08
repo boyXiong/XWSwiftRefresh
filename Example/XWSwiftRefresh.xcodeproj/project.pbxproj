@@ -63,7 +63,6 @@
 		EA2B135E1BC4D340005E310F /* XWRefreshStateHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshStateHeader.swift; sourceTree = "<group>"; };
 		EA2B13601BC4D340005E310F /* UIScrollViewExtension-XW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollViewExtension-XW.swift"; sourceTree = "<group>"; };
 		EA2B13621BC4D340005E310F /* xw_icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = xw_icon.bundle; sourceTree = "<group>"; };
-		EA2B13631BC4D340005E310F /* XWSwiftRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWSwiftRefresh.h; sourceTree = "<group>"; };
 		EA435B281BA5011700C6C2E2 /* XWSwiftRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWSwiftRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA435B2B1BA5011700C6C2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA435B301BA5011700C6C2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,7 +145,6 @@
 				EA2B135A1BC4D340005E310F /* Header */,
 				EA2B135F1BC4D340005E310F /* Helper */,
 				EA2B13611BC4D340005E310F /* Icon */,
-				EA2B13631BC4D340005E310F /* XWSwiftRefresh.h */,
 			);
 			name = XWSwiftRefresh;
 			path = ../../XWSwiftRefresh;
