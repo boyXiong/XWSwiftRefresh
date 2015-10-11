@@ -24,9 +24,7 @@ s.summary      = "The easiest way to use pull-to-refresh with Swift2.0 program l
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
-s.description  = <<-DESC
-* This is a very convenience of swift extensions.
-DESC
+
 
 s.homepage     = "https://github.com/boyXiong/XWSwiftRefresh"
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"

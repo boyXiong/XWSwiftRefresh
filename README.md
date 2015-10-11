@@ -1,7 +1,11 @@
 # XWSwiftRefresh
 一句话解决刷新
 #### 使用方法 基于Xcode 7 Swift2.0
-#### 正在支持 cocoapod 目前可以将 XWSwiftRefresh文件夹 拖拽到项目中就可以使用 
+#### 支持cocoapod 
+```
+    pod 'XWSwiftRefresh', '~> 0.1.2'
+```
+#### How to use
 ```Swift
 /**  version 1.2 使用方法 */
 
