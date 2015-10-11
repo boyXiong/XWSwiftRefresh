@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
 s.name         = "XWSwiftRefresh"
 s.version      = "0.1.2"
-s.summary      = "The easiest way to use pull-to-refresh with Swift2.0 program language.."
+s.summary      = "The easiest way to use pull-to-refresh with Swift2.0 program language."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
