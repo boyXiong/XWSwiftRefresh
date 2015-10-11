@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5540CB10-4CB9-4BFE-8346-499995D624A6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>XWSwiftRefresh</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>05BA7A8E3677B2F6CDA1CD68554F3EB51C1AF985</key>
 		<string>https://github.com/boyXiong/XWSwiftRefresh.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Example/XWSwiftRefresh.xcodeproj</string>
+	<string>Example/XWSwiftRefresh.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>05BA7A8E3677B2F6CDA1CD68554F3EB51C1AF985</key>

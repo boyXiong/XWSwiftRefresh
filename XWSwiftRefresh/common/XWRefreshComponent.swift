@@ -297,11 +297,6 @@ typealias XWRefreshComponentRefreshingClosure = ()->()
         }
     }
     
-    deinit{
-        
-        print("deinit")
-    }
-    
 }
 
 
