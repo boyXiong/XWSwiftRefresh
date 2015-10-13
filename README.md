@@ -11,8 +11,11 @@
 ```
 #### How to use
 
+##### 导入 import XWSwiftRefresh
+
 ```Swift
-/**  version 1.2 使用方法 */
+
+/**  version 1.3 使用方法 */
 
 // MARK: 默认的视图
     /** 添加上拉刷新头部控件  
