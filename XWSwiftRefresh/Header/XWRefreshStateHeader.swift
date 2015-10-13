@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XWRefreshStateHeader: XWRefreshHeader {
+public class XWRefreshStateHeader: XWRefreshHeader {
     
     //MARK: 私有的
     /** 每个状态对应的文字 */

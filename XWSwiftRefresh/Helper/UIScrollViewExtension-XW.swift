@@ -16,14 +16,15 @@ private var XWRefreshReloadDataClosureKey:Void?
 
 
 typealias xwClosureParamCountType = (Int)->Void
-class xwReloadDataClosureInClass {
+
+public class xwReloadDataClosureInClass {
     var reloadDataClosure:xwClosureParamCountType = { (Int)->Void in }
 }
 //用于加强一个引用
 //var xwRetainClosureClass = xwReloadDataClosureInClass()
 
 
-extension UIScrollView {
+public extension UIScrollView {
     
     
     /** ===========================================================================================

@@ -9,7 +9,7 @@
 import UIKit
 
 
-class XWRefreshHeader: XWRefreshComponent {
+public class XWRefreshHeader: XWRefreshComponent {
     
     //MARK: 公开的
     
@@ -176,7 +176,7 @@ class XWRefreshHeader: XWRefreshComponent {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

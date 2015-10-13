@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XWRefreshAutoNormalFooter: XWRefreshAutoStateFooter {
+public class XWRefreshAutoNormalFooter: XWRefreshAutoStateFooter {
     
     //MARK: 外部访问
     /** 菊花样式 */

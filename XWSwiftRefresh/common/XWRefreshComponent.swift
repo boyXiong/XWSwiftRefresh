@@ -26,7 +26,7 @@ enum XWRefreshState:Int{
 typealias XWRefreshComponentRefreshingClosure = ()->()
 
 
- class XWRefreshComponent: UIView {
+public class XWRefreshComponent: UIView {
 
     //MARK: 公共接口
     //MARK 给外界访问的
@@ -195,14 +195,14 @@ typealias XWRefreshComponentRefreshingClosure = ()->()
         
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     
     
     //重写父类方法 这个view 会添加到 ScrollView 上去
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    override public func willMoveToSuperview(newSuperview: UIView?) {
         super.willMoveToSuperview(newSuperview)
         
         //1.旧的父控件 移除监听
@@ -263,7 +263,7 @@ typealias XWRefreshComponentRefreshingClosure = ()->()
     
     
     //MARK: drawRect
-    override func drawRect(rect: CGRect) {
+    override public func drawRect(rect: CGRect) {
         super.drawRect(rect)
         
         if self.state == XWRefreshState.WillRefresh {
@@ -273,13 +273,13 @@ typealias XWRefreshComponentRefreshingClosure = ()->()
     }
     
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         self.placeSubvies()
     }
     
     
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
         //需要这种情况就直接返回
         if !self.userInteractionEnabled { return }

@@ -9,7 +9,7 @@
 import UIKit
 
 
-class XWRefreshNormalHeader: XWRefreshStateHeader {
+public class XWRefreshNormalHeader: XWRefreshStateHeader {
     
     //MARK: 外界接口
     var activityIndicatorViewStyle:UIActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XWRefreshAutoStateFooter: XWRefreshAutoFooter {
+public class XWRefreshAutoStateFooter: XWRefreshAutoFooter {
     
     //MARK: 外部
 

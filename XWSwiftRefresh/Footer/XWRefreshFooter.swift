@@ -9,7 +9,7 @@
 import UIKit
 
 
-class XWRefreshFooter: XWRefreshComponent {
+public class XWRefreshFooter: XWRefreshComponent {
     
     //MARK: 提供外界访问的
     /** 提示没有更多的数据 */
@@ -33,7 +33,7 @@ class XWRefreshFooter: XWRefreshComponent {
         self.xw_height = XWRefreshFooterHeight
     }
     
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    override public func willMoveToSuperview(newSuperview: UIView?) {
         super.willMoveToSuperview(newSuperview)
         
         if let _ = newSuperview {

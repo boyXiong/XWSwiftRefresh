@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XWRefreshGifHeader: XWRefreshStateHeader {
+public class XWRefreshGifHeader: XWRefreshStateHeader {
     
     //MARK: 方法接口
     /** 设置刷新状态下,gif的图片 */

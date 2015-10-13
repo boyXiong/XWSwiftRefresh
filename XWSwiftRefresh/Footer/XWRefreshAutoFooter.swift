@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XWRefreshAutoFooter: XWRefreshFooter {
+public class XWRefreshAutoFooter: XWRefreshFooter {
     
     //MARK: 公共接口
     /** 是否自动刷新(默认为YES) */
@@ -29,7 +29,7 @@ class XWRefreshAutoFooter: XWRefreshFooter {
     //MARK: 重写
     
     //初始化
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    override public func willMoveToSuperview(newSuperview: UIView?) {
         
         super.willMoveToSuperview(newSuperview)
         
@@ -120,7 +120,7 @@ class XWRefreshAutoFooter: XWRefreshFooter {
     }
     
     
-    override var hidden:Bool{
+    override public var hidden:Bool{
         didSet{
             //如果之前没有隐藏的现在隐藏了，那么要设置状态和去掉底部区域
             if !oldValue && hidden {
