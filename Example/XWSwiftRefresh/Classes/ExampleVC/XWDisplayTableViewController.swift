@@ -4,7 +4,8 @@
 //
 //  Created by Xiong Wei on 15/10/7.
 //  Copyright © 2015年 Xiong Wei. All rights reserved.
-//
+//  新浪微博: @爱吃香干炒肉
+
 
 import UIKit
 
