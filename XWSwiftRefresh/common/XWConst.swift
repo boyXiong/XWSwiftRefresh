@@ -11,7 +11,6 @@ import UIKit
 
 //文字颜色
 let XWRefreshLabelTextColor = xwColor(r: 100, g: 100, b: 100)
-
 //字体大小
 let XWRefreshLabelFont = UIFont.boldSystemFontOfSize(13)
 
