@@ -3,9 +3,14 @@
 #### 使用方法 基于Xcode 7 Swift2.0
 #### 支持cocoapod 
 ```
-    pod 'XWSwiftRefresh', '~> 0.1.2'
+    source 'https://github.com/CocoaPods/Specs.git'
+	platform :ios, '8.0'
+	use_frameworks!
+
+	pod 'XWSwiftRefresh', '~> 0.1.3'
 ```
 #### How to use
+
 ```Swift
 /**  version 1.2 使用方法 */
 
