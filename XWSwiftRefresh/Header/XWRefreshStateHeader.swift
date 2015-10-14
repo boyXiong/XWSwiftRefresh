@@ -61,6 +61,7 @@ public class XWRefreshStateHeader: XWRefreshHeader {
         didSet{
             if oldValue == refreshingTimeHidden { return }
             self.lastUpdatedTimeLabel.hidden = refreshingTimeHidden
+
         }
 
     }

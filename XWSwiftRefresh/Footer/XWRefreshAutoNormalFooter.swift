@@ -26,7 +26,7 @@ public class XWRefreshAutoNormalFooter: XWRefreshAutoStateFooter {
     //MARK: 私有
     
     //菊花
-    private lazy var activityView:UIActivityIndicatorView = {
+    lazy var activityView:UIActivityIndicatorView = {
         
         [unowned self] in
         

@@ -96,9 +96,9 @@ class XWDisplayTableViewController: UITableViewController {
         
         
         //隐藏状态栏
-        headerView.refreshingTitleHidden = false
+        headerView.refreshingTitleHidden = true
         //隐藏时间状态
-        headerView.refreshingTimeHidden = false
+        headerView.refreshingTimeHidden = true
         //根据上拉比例设置透明度
         headerView.automaticallyChangeAlpha = true
         

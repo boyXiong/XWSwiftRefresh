@@ -54,4 +54,9 @@ let XWRefreshFooterStateIdleText = "点击加载更多"
 let XWRefreshFooterStateRefreshingText = "正在加载更多的数据..."
 let XWRefreshFooterStateNoMoreDataText = "已经全部加载完毕"
 
+/** 图片路径 */
+let XWIconSrcPath:String = "Frameworks/XWSwiftRefresh.framework/xw_icon.bundle/xw_down.png"
+
+let XWIconLocalPath:String = "xw_icon.bundle/xw_down.png"
+
 

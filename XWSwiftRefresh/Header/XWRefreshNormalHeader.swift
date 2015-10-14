@@ -26,12 +26,14 @@ public class XWRefreshNormalHeader: XWRefreshStateHeader {
     //MARK: lazy
     //图片
     /** 指示图片 */
-    public lazy  var arrowView:UIImageView = {
+    lazy  var arrowView:UIImageView = {
         [unowned self] in
-        var path:NSString = "xw_icon.bundle"
-        path = path.stringByAppendingPathComponent("xw_down.png")
-        let imageView = UIImageView(image: UIImage(named: String(path)))
-        
+
+        var image = UIImage(named:XWIconSrcPath)
+        if image == nil {
+            image = UIImage(named: XWIconLocalPath)
+        }
+        let imageView = UIImageView(image: image)
         self.addSubview(imageView)
         
         return imageView
