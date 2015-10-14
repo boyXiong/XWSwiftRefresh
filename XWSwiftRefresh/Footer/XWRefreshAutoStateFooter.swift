@@ -22,9 +22,10 @@ public class XWRefreshAutoStateFooter: XWRefreshAutoFooter {
         return lable
     }()
     
-    /** 隐藏刷新状态的文字*/
+    /** 隐藏刷新状态的文字 */
     public var refreshingTitleHidden:Bool = false
     
+    /** 设置状态的显示文字 */
     public func setTitle(title:String, state:XWRefreshState){
         self.stateLabel.text = self.stateTitles[self.state];
     }

@@ -48,7 +48,7 @@ public class XWRefreshComponent: UIView {
     //5.真正刷新 回调
     var refreshingClosure:XWRefreshComponentRefreshingClosure = {}
     
-    /**6. 拉拽的百分比 */
+    /** 拉拽的百分比 */
     public var pullingPercent:CGFloat = 1 {
         didSet{
             
@@ -59,7 +59,7 @@ public class XWRefreshComponent: UIView {
         }
     }
     
-    /**7.根据拖拽比例自动切换透明度 */
+    /** 根据拖拽比例自动切换透明度 */
     public var automaticallyChangeAlpha:Bool = false {
         didSet{
             if self.state == XWRefreshState.Refreshing { return }
@@ -74,7 +74,7 @@ public class XWRefreshComponent: UIView {
     /**8.刷新状态，交给子类重写 */
     var state = XWRefreshState.Idle
     
-    /**9.是否在刷新 */
+    /** 是否在刷新 */
     public var isRefreshing:Bool{
         get {
             return self.state == .Refreshing || self.state == .WillRefresh;
@@ -90,6 +90,8 @@ public class XWRefreshComponent: UIView {
     
     
     //MARK: 遍历构造方法
+    
+    /** 闭包回调 */
     public convenience
     init(ComponentRefreshingClosure:XWRefreshComponentRefreshingClosure){
         self.init()
@@ -97,6 +99,7 @@ public class XWRefreshComponent: UIView {
         
     }
     
+    /**target action 回调 [推荐]*/
     public convenience
     init(target:AnyObject, action:Selector){
         self.init()
@@ -114,7 +117,7 @@ public class XWRefreshComponent: UIView {
     //MARK 公共接口  提供给子类重写
     
     
-    /** 2. 进入刷新状态 */
+    /** 开始刷新,进入刷新状态 */
     public func beginRefreshing(){
         
         UIView.animateWithDuration(XWRefreshSlowAnimationDuration) { () -> Void in
@@ -133,7 +136,7 @@ public class XWRefreshComponent: UIView {
         }
 
     }
-    /** 3. 结束刷新状态 */
+    /** 结束刷新 */
     public func endRefreshing(){
         self.state = .Idle
     

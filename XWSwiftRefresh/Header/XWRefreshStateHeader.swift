@@ -43,11 +43,28 @@ public class XWRefreshStateHeader: XWRefreshHeader {
         }()
     
     
-    /** 设置文件显示状态 */
+    /** 设置状态的显示文字 */
     public func setTitle(title:String, state:XWRefreshState){
         self.stateLabel.text = self.stateTitles[self.state];
     }
     
+    /** 文字刷新状态下的显示与隐藏 */
+    public var refreshingTitleHidden:Bool = false {
+        didSet{
+            if oldValue == refreshingTitleHidden { return }
+            self.stateLabel.hidden = refreshingTitleHidden
+        }
+    }
+    
+    /** 时间刷新状态下的显示与隐藏*/
+    public var refreshingTimeHidden:Bool = false {
+        didSet{
+            if oldValue == refreshingTimeHidden { return }
+            self.lastUpdatedTimeLabel.hidden = refreshingTimeHidden
+        }
+
+    }
+
     
     //MARK: 重写
     

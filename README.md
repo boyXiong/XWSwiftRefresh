@@ -66,14 +66,14 @@
     headerView.setImages(idleImages, duration: 0.8, state: XWRefreshState.Idle)
     headerView.setImages(refreshingImages, duration: 0.8, state: XWRefreshState.Refreshing)
 
-
     //隐藏状态栏 默认不隐藏，就显示 用户的状态
-    headerView.stateLabel.hidden = true
+    headerView.refreshingTitleHidden = false
     //隐藏时间状态  默认隐藏，就显示 时间的状态
-    headerView.lastUpdatedTimeLabel.hidden = true
+    headerView.refreshingTimeHidden = false
     //根据上拉比例设置透明度  默认 是 false
     headerView.automaticallyChangeAlpha = true
-    
+
+       
     设置 headerView
     self.tableView.headerView = headerView
 

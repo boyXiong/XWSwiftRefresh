@@ -157,7 +157,7 @@ public class XWRefreshHeader: XWRefreshComponent {
         }
     }
     
-       
+    /** 结束刷新 */
     override public func endRefreshing() {
         
         if self.scrollView.isKindOfClass(UICollectionView){
