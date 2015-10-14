@@ -13,6 +13,8 @@ import UIKit
 public class XWRefreshNormalHeader: XWRefreshStateHeader {
     
     //MARK: 外界接口
+    
+    /** 菊花样式 */
     public var activityIndicatorViewStyle:UIActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray {
         
         didSet{
@@ -21,6 +23,14 @@ public class XWRefreshNormalHeader: XWRefreshStateHeader {
         }
     }
     
+    /** 指示器的图片[箭头] */
+    public var arrowImage:UIImage? {
+        didSet{
+            
+            self.arrowView.image = arrowImage
+            self.placeSubvies()
+        }
+    }
     
     
     //MARK: lazy
@@ -38,6 +48,8 @@ public class XWRefreshNormalHeader: XWRefreshStateHeader {
         
         return imageView
         }()
+    
+    
     
     //菊花
     private lazy var activityView:UIActivityIndicatorView = {
