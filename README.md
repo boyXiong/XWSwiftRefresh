@@ -8,7 +8,7 @@
 	platform :ios, '8.0'
 	use_frameworks!
 
-	pod 'XWSwiftRefresh', '~> 0.1.3'
+	pod 'XWSwiftRefresh', '~> 0.1.5'
 ```
 #### How to use
 
