@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
 s.name         = "XWSwiftRefresh"
-s.version      = "0.1.5"
+s.version      = "0.1.6"
 s.summary      = "The easiest way to use pull-to-refresh with Swift2.0 program language."
 
 
@@ -23,7 +23,7 @@ s.social_media_url   = "http://blog.csdn.net/boyXiong.com/"
 s.platform     = :ios, "8.0"
 
 
-s.source       = { :git => "https://github.com/boyXiong/XWSwiftRefresh.git", :tag => "0.1.5" }
+s.source       = { :git => "https://github.com/boyXiong/XWSwiftRefresh.git", :tag => "0.1.6" }
 
 
 s.source_files  = "XWSwiftRefresh/**/*.{swift}"
