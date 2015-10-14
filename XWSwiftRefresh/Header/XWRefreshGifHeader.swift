@@ -9,16 +9,18 @@
 
 import UIKit
 
+
+/** headerView gif 样式 要设置gif状态图片*/
 public class XWRefreshGifHeader: XWRefreshStateHeader {
     
     //MARK: 方法接口
     /** 设置刷新状态下,gif的图片 */
-    func setImages(images:Array<UIImage>, state:XWRefreshState) -> Self {
+    public func setImages(images:Array<UIImage>, state:XWRefreshState) -> Self {
         
         return self.setImages(images, duration: NSTimeInterval(images.count) * 0.1, state: state)
     }
     /** 设置刷新状态下,gif的图片,动画每帧相隔的时间 */
-    func setImages(images:Array<UIImage>, duration:NSTimeInterval, state:XWRefreshState) -> Self {
+    public func setImages(images:Array<UIImage>, duration:NSTimeInterval, state:XWRefreshState) -> Self {
         //防止空数组 []
         if images.count < 1 { return self}
         
@@ -34,6 +36,7 @@ public class XWRefreshGifHeader: XWRefreshStateHeader {
         return self
     }
     
+    
     private lazy var gifView:UIImageView = {
         [unowned self] in
         let gifView = UIImageView()
@@ -46,7 +49,7 @@ public class XWRefreshGifHeader: XWRefreshStateHeader {
     
     
     //MARK: 重写
-    override var pullingPercent:CGFloat {
+    override public var pullingPercent:CGFloat {
         didSet{
             if  let images = self.stateImages[XWRefreshState.Idle] {
                 

@@ -11,7 +11,7 @@ import UIKit
 
 
 /** 刷新状态 */
-enum XWRefreshState:Int{
+public enum XWRefreshState:Int{
     /**普通闲置状态 */
     case Idle = 1
     /** 松开可以进行刷新状态 */
@@ -24,19 +24,20 @@ enum XWRefreshState:Int{
     case NoMoreData = 5
 }
 
-typealias XWRefreshComponentRefreshingClosure = ()->()
+/** 闭包的类型 ()->() */
+public typealias XWRefreshComponentRefreshingClosure = ()->()
 
-
+/** 抽象类，不直接使用，用于继承后，重写*/
 public class XWRefreshComponent: UIView {
 
     //MARK: 公共接口
     //MARK 给外界访问的
     
     //1.字体颜色
-    var textColor:UIColor?
+    public var textColor:UIColor?
     
     //2.字体大小
-    var font:UIFont?
+    public var font:UIFont?
     
     //3.刷新的target
     private weak var refreshingTarget:AnyObject!
@@ -48,7 +49,7 @@ public class XWRefreshComponent: UIView {
     var refreshingClosure:XWRefreshComponentRefreshingClosure = {}
     
     /**6. 拉拽的百分比 */
-    var pullingPercent:CGFloat = 1 {
+    public var pullingPercent:CGFloat = 1 {
         didSet{
             
             if self.state == XWRefreshState.Refreshing { return }
@@ -59,7 +60,7 @@ public class XWRefreshComponent: UIView {
     }
     
     /**7.根据拖拽比例自动切换透明度 */
-    var automaticallyChangeAlpha:Bool = false {
+    public var automaticallyChangeAlpha:Bool = false {
         didSet{
             if self.state == XWRefreshState.Refreshing { return }
             if automaticallyChangeAlpha == true {
@@ -73,6 +74,13 @@ public class XWRefreshComponent: UIView {
     /**8.刷新状态，交给子类重写 */
     var state = XWRefreshState.Idle
     
+    /**9.是否在刷新 */
+    public var isRefreshing:Bool{
+        get {
+            return self.state == .Refreshing || self.state == .WillRefresh;
+        }
+    }
+    
        
     //MARK 方法
     //提供方便，有提示
@@ -82,14 +90,14 @@ public class XWRefreshComponent: UIView {
     
     
     //MARK: 遍历构造方法
-    convenience
+    public convenience
     init(ComponentRefreshingClosure:XWRefreshComponentRefreshingClosure){
         self.init()
         self.refreshingClosure = ComponentRefreshingClosure
         
     }
     
-    convenience
+    public convenience
     init(target:AnyObject, action:Selector){
         self.init()
         self.setRefreshingTarget(target, action: action)
@@ -107,7 +115,7 @@ public class XWRefreshComponent: UIView {
     
     
     /** 2. 进入刷新状态 */
-    func beginRefreshing(){
+    public func beginRefreshing(){
         
         UIView.animateWithDuration(XWRefreshSlowAnimationDuration) { () -> Void in
             self.alpha = 1.0
@@ -126,13 +134,11 @@ public class XWRefreshComponent: UIView {
 
     }
     /** 3. 结束刷新状态 */
-    func endRefreshing(){
+    public func endRefreshing(){
         self.state = .Idle
     
     }
     
-    /** 4. 是否正在刷新 */
-    func isRefreshing(){}
 
     /**
      5. 初始化 

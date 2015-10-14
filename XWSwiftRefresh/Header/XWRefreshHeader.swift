@@ -9,7 +9,7 @@
 
 import UIKit
 
-
+/** 抽象类不直接使用 用于重写*/
 public class XWRefreshHeader: XWRefreshComponent {
     
     //MARK: 公开的
@@ -18,10 +18,10 @@ public class XWRefreshHeader: XWRefreshComponent {
     var lastUpdatedateKey:String = ""
     
     /** 忽略多少scrollView的contentInset的top */
-    var ignoredScrollViewContentInsetTop:CGFloat = 0.0
+    public var ignoredScrollViewContentInsetTop:CGFloat = 0.0
     
     /** 上一次下拉刷新成功的时间 */
-    var lastUpdatedTime:NSDate{
+    public var lastUpdatedTime:NSDate{
         get{
             if let realTmp =  NSUserDefaults.standardUserDefaults().objectForKey(self.lastUpdatedateKey){
                 
@@ -158,7 +158,7 @@ public class XWRefreshHeader: XWRefreshComponent {
     }
     
        
-    override func endRefreshing() {
+    override public func endRefreshing() {
         
         if self.scrollView.isKindOfClass(UICollectionView){
             

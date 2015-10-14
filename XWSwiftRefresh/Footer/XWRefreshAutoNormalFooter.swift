@@ -9,11 +9,12 @@
 
 import UIKit
 
+/** footerView 带有菊花和状态文字的 */
 public class XWRefreshAutoNormalFooter: XWRefreshAutoStateFooter {
     
     //MARK: 外部访问
     /** 菊花样式 */
-    var activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray {
+    public var activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray {
         
         didSet{
             self.activityView.activityIndicatorViewStyle = activityIndicatorViewStyle

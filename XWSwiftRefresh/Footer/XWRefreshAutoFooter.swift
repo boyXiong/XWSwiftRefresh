@@ -9,11 +9,13 @@
 
 import UIKit
 
+
+/** footerView 什么样式都没有的 */
 public class XWRefreshAutoFooter: XWRefreshFooter {
     
     //MARK: 公共接口
     /** 是否自动刷新(默认为YES) */
-    var automaticallyRefresh:Bool = true
+    public var automaticallyRefresh:Bool = true
     
     /** 当底部控件出现多少时就自动刷新(默认为1.0，也就是底部控件完全出现时，才会自动刷新) */
 //    @available(*, deprecated=1.0, message="Use -automaticallyChangeAlpha instead.")
@@ -24,7 +26,7 @@ public class XWRefreshAutoFooter: XWRefreshFooter {
     }
     
     /** 当底部控件出现多少时就自动刷新(默认为1.0，也就是底部控件完全出现时，才会自动刷新) */
-    var triggerAutomaticallyRefreshPercent:CGFloat = 1.0
+    public var triggerAutomaticallyRefreshPercent:CGFloat = 1.0
     
     
     //MARK: 重写

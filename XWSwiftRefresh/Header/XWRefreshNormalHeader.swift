@@ -9,11 +9,11 @@
 
 import UIKit
 
-
+/** headerView 带有状态和指示图片*/
 public class XWRefreshNormalHeader: XWRefreshStateHeader {
     
     //MARK: 外界接口
-    var activityIndicatorViewStyle:UIActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray {
+    public var activityIndicatorViewStyle:UIActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray {
         
         didSet{
             self.activityView.activityIndicatorViewStyle = activityIndicatorViewStyle
@@ -25,7 +25,8 @@ public class XWRefreshNormalHeader: XWRefreshStateHeader {
     
     //MARK: lazy
     //图片
-    private lazy  var arrowView:UIImageView = {
+    /** 指示图片 */
+    public lazy  var arrowView:UIImageView = {
         [unowned self] in
         var path:NSString = "xw_icon.bundle"
         path = path.stringByAppendingPathComponent("xw_down.png")

@@ -9,21 +9,21 @@
 
 import UIKit
 
-
+/** 抽象类，不直接使用，用于继承后，重写*/
 public class XWRefreshFooter: XWRefreshComponent {
     
     //MARK: 提供外界访问的
     /** 提示没有更多的数据 */
-    func noticeNoMoreData(){ self.state = XWRefreshState.NoMoreData }
+    public func noticeNoMoreData(){ self.state = XWRefreshState.NoMoreData }
     
     /** 重置没有更多的数据（消除没有更多数据的状态） */
-    func resetNoMoreData(){  self.state = XWRefreshState.Idle }
+    public func resetNoMoreData(){  self.state = XWRefreshState.Idle }
     
     /** 忽略多少scrollView的contentInset的bottom */
-    var ignoredScrollViewContentInsetBottom:CGFloat = 0
+    public var ignoredScrollViewContentInsetBottom:CGFloat = 0
     
     /** 自动根据有无数据来显示和隐藏（有数据就显示，没有数据隐藏） */
-    var automaticallyHidden:Bool = true
+    public var automaticallyHidden:Bool = true
     
     
     //MARK: 私有的

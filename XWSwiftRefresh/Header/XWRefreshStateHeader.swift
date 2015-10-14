@@ -9,6 +9,7 @@
 
 import UIKit
 
+/** headerView 只有状态文字 */
 public class XWRefreshStateHeader: XWRefreshHeader {
     
     //MARK: 私有的
@@ -43,7 +44,7 @@ public class XWRefreshStateHeader: XWRefreshHeader {
     
     
     /** 设置文件显示状态 */
-    private func setTitle(title:String, state:XWRefreshState){
+    public func setTitle(title:String, state:XWRefreshState){
         self.stateLabel.text = self.stateTitles[self.state];
     }
     

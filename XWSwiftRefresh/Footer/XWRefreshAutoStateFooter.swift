@@ -9,6 +9,7 @@
 
 import UIKit
 
+/** footerView 只有状态文字 */
 public class XWRefreshAutoStateFooter: XWRefreshAutoFooter {
     
     //MARK: 外部
@@ -21,10 +22,10 @@ public class XWRefreshAutoStateFooter: XWRefreshAutoFooter {
         return lable
     }()
     
-    /** 隐藏刷新状态的文字 */
-    var refreshingTitleHidden:Bool = false
+    /** 隐藏刷新状态的文字*/
+    public var refreshingTitleHidden:Bool = false
     
-    func setTitle(title:String, state:XWRefreshState){
+    public func setTitle(title:String, state:XWRefreshState){
         self.stateLabel.text = self.stateTitles[self.state];
     }
 
