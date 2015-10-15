@@ -1,5 +1,9 @@
 # XWSwiftRefresh
-一句话解决刷新
+---
+####一句话解决刷新
+
+![](https://raw.githubusercontent.com/boyXiong/raw/master/picture/XWSwiftRefresh/displayHowToUser.gif)
+
 #### 使用方法 基于Xcode 7 Swift2.0
 #### 支持cocoapod 
 ```
@@ -102,7 +106,6 @@
         }
 
 ```
-![](https://raw.githubusercontent.com/boyXiong/raw/master/picture/XWSwiftRefresh/displayHowToUser.gif)
 
 ##### 感谢 MJRefresh AFNetwork SDWebImage KxMovie GPUImage等 好的开源框架
 ##### 感谢 KSImageNamed ,VV 等优秀的插件
