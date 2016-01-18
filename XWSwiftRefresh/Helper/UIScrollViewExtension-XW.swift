@@ -70,11 +70,7 @@ public extension UIScrollView {
 			}
 		}
         get{
-            if let tmp = objc_getAssociatedObject(self, &XWRefreshHeaderKey){
-                return tmp as? XWRefreshHeader
-                
-            }
-            return nil
+            return objc_getAssociatedObject(self, &XWRefreshHeaderKey) as? XWRefreshHeader
         }
     }
     
@@ -97,11 +93,7 @@ public extension UIScrollView {
 			}
         }
         get{
-            if let tmp = objc_getAssociatedObject(self, &XWRefreshFooterKey){
-                return tmp as? XWRefreshFooter
-                
-            }
-            return nil
+			return objc_getAssociatedObject(self, &XWRefreshFooterKey) as? XWRefreshFooter
         }
     }
     
