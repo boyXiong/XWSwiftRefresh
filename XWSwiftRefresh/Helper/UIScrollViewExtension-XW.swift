@@ -54,51 +54,43 @@ public extension UIScrollView {
     }
     
     /** 下拉刷新的控件 */
-    var headerView:XWRefreshHeader?{
-        
-        set{
-            if let realHeaderView = self.headerView {
-                
-                if realHeaderView == newValue! { return }
+	var headerView:XWRefreshHeader?{
 
-				realHeaderView.removeFromSuperview()
-			}
+		set{
+			if self.headerView == newValue! { return }
+			self.headerView?.removeFromSuperview()
 			objc_setAssociatedObject(self,&XWRefreshHeaderKey, newValue , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
 
 			if let newHeaderView = newValue {
 				self.addSubview(newHeaderView)
 			}
 		}
-        get{
-            return objc_getAssociatedObject(self, &XWRefreshHeaderKey) as? XWRefreshHeader
-        }
-    }
-    
-    
-    
-    /** 上拉刷新的控件 */
-    var footerView:XWRefreshFooter?{
-        
-        set{
-            if let realFooterView = self.footerView {
-                
-                if realFooterView == newValue { return }
-                
-				realFooterView.removeFromSuperview()
-			}
+		get{
+			return objc_getAssociatedObject(self, &XWRefreshHeaderKey) as? XWRefreshHeader
+		}
+	}
+
+
+
+	/** 上拉刷新的控件 */
+	var footerView:XWRefreshFooter?{
+
+		set{
+			if self.footerView == newValue { return }
+			self.footerView?.removeFromSuperview()
 			objc_setAssociatedObject(self,&XWRefreshFooterKey, newValue , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
 
 			if let newFooterView = newValue {
 				self.addSubview(newFooterView)
 			}
-        }
-        get{
+		}
+		get{
 			return objc_getAssociatedObject(self, &XWRefreshFooterKey) as? XWRefreshFooter
-        }
-    }
-    
+		}
+	}
+	
     var totalDataCount:Int{
-        
+
         get{
             var totalCount:Int = 0
             if self.isKindOfClass(UITableView){
