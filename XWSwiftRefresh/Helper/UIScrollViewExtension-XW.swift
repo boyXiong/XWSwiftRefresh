@@ -60,25 +60,17 @@ public extension UIScrollView {
             if let realHeaderView = self.headerView {
                 
                 if realHeaderView == newValue! { return }
-                
-                realHeaderView.removeFromSuperview()
-                
-                self.addSubview(newValue!)
-                
-                objc_setAssociatedObject(self,&XWRefreshHeaderKey, newValue! , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-                
-            }else {
-                
-                self.addSubview(newValue!)
-                objc_setAssociatedObject(self,&XWRefreshHeaderKey, newValue! , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-            }
-        }
+
+				realHeaderView.removeFromSuperview()
+			}
+			objc_setAssociatedObject(self,&XWRefreshHeaderKey, newValue , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+
+			if let newHeaderView = newValue {
+				self.addSubview(newHeaderView)
+			}
+		}
         get{
-            if let tmp = objc_getAssociatedObject(self, &XWRefreshHeaderKey){
-                return tmp as? XWRefreshHeader
-                
-            }
-            return nil
+            return objc_getAssociatedObject(self, &XWRefreshHeaderKey) as? XWRefreshHeader
         }
     }
     
@@ -88,28 +80,20 @@ public extension UIScrollView {
     var footerView:XWRefreshFooter?{
         
         set{
-            if let realHeaderView = self.footerView {
+            if let realFooterView = self.footerView {
                 
-                if realHeaderView == newValue! { return }
+                if realFooterView == newValue { return }
                 
-                realHeaderView.removeFromSuperview()
-                
-                self.addSubview(newValue!)
-                
-                objc_setAssociatedObject(self,&XWRefreshFooterKey, newValue! , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-                
-            }else {
-                
-                self.addSubview(newValue!)
-                objc_setAssociatedObject(self,&XWRefreshFooterKey, newValue! , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-            }
+				realFooterView.removeFromSuperview()
+			}
+			objc_setAssociatedObject(self,&XWRefreshFooterKey, newValue , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+
+			if let newFooterView = newValue {
+				self.addSubview(newFooterView)
+			}
         }
         get{
-            if let tmp = objc_getAssociatedObject(self, &XWRefreshFooterKey){
-                return tmp as? XWRefreshFooter
-                
-            }
-            return nil
+			return objc_getAssociatedObject(self, &XWRefreshFooterKey) as? XWRefreshFooter
         }
     }
     
