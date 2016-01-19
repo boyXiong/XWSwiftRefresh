@@ -53,65 +53,41 @@ public extension UIScrollView {
         
     }
     
-    /** 下拉刷新的控件 */
-    var headerView:XWRefreshHeader?{
-        
-        set{
-            if let realHeaderView = self.headerView {
-                
-                if realHeaderView == newValue! { return }
-                
-                realHeaderView.removeFromSuperview()
-                
-                self.addSubview(newValue!)
-                
-                objc_setAssociatedObject(self,&XWRefreshHeaderKey, newValue! , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-                
-            }else {
-                
-                self.addSubview(newValue!)
-                objc_setAssociatedObject(self,&XWRefreshHeaderKey, newValue! , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-            }
-        }
-        get{
-            if let tmp = objc_getAssociatedObject(self, &XWRefreshHeaderKey){
-                return tmp as? XWRefreshHeader
-                
-            }
-            return nil
-        }
-    }
-    
-    
-    
-    /** 上拉刷新的控件 */
-    var footerView:XWRefreshFooter?{
-        
-        set{
-            if let realHeaderView = self.footerView {
-                
-                if realHeaderView == newValue! { return }
-                
-                realHeaderView.removeFromSuperview()
-                
-                self.addSubview(newValue!)
-                
-                objc_setAssociatedObject(self,&XWRefreshFooterKey, newValue! , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-                
-            }else {
-                
-                self.addSubview(newValue!)
-                objc_setAssociatedObject(self,&XWRefreshFooterKey, newValue! , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
-            }
-        }
-        get{
-            if let tmp = objc_getAssociatedObject(self, &XWRefreshFooterKey){
-                return tmp as? XWRefreshFooter
-                
-            }
-            return nil
-        }
-    }
+	/** 下拉刷新的控件 */
+	var headerView:XWRefreshHeader?{
+
+		set{
+			if self.headerView == newValue! { return }
+			self.headerView?.removeFromSuperview()
+			objc_setAssociatedObject(self,&XWRefreshHeaderKey, newValue , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+
+			if let newHeaderView = newValue {
+				self.addSubview(newHeaderView)
+			}
+		}
+		get{
+			return objc_getAssociatedObject(self, &XWRefreshHeaderKey) as? XWRefreshHeader
+		}
+	}
+
+
+
+	/** 上拉刷新的控件 */
+	var footerView:XWRefreshFooter?{
+
+		set{
+			if self.footerView == newValue { return }
+			self.footerView?.removeFromSuperview()
+			objc_setAssociatedObject(self,&XWRefreshFooterKey, newValue , objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+
+			if let newFooterView = newValue {
+				self.addSubview(newFooterView)
+			}
+		}
+		get{
+			return objc_getAssociatedObject(self, &XWRefreshFooterKey) as? XWRefreshFooter
+		}
+	}
     
     var totalDataCount:Int{
         
