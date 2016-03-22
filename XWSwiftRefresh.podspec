@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
 s.name         = "XWSwiftRefresh"
-s.version      = "0.1.6"
+s.version      = "0.1.8"
 s.summary      = "The easiest way to use pull-to-refresh with Swift2.0 program language."
 
 
