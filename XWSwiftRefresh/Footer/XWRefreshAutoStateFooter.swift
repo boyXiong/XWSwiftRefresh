@@ -43,7 +43,7 @@ public class XWRefreshAutoStateFooter: XWRefreshAutoFooter {
         super.prepare()
         
         self.stateLabel.userInteractionEnabled = true
-        self.stateLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "stateLabelClick"))
+        self.stateLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(XWRefreshAutoStateFooter.stateLabelClick)))
         self.stateLabel.text = self.stateTitles[state]
 
     }

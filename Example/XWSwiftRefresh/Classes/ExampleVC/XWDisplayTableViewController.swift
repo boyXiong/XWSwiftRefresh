@@ -59,12 +59,12 @@ class XWDisplayTableViewController: UITableViewController {
         }
         */
         
-        self.tableView.headerView = XWRefreshNormalHeader(target: self, action: "upPullLoadData")
+        self.tableView.headerView = XWRefreshNormalHeader(target: self, action: #selector(XWDisplayTableViewController.upPullLoadData))
         
         self.tableView.headerView?.beginRefreshing()
         self.tableView.headerView?.endRefreshing()
         
-        self.tableView.footerView = XWRefreshAutoNormalFooter(target: self, action: "downPlullLoadData")
+        self.tableView.footerView = XWRefreshAutoNormalFooter(target: self, action: #selector(XWDisplayTableViewController.downPlullLoadData))
         
         
     }
@@ -74,20 +74,20 @@ class XWDisplayTableViewController: UITableViewController {
         
         
         var idleImages = [UIImage]()
-        for (var i = 1; i<=20; i++) {
+        for i in 1...20 {
             let image = UIImage(named: String(format: "mono-black-%zd", i))
             idleImages.append(image!)
         }
         
         // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
         var refreshingImages = [UIImage]()
-        for (var i = 1; i<=20; i++) {
+        for i in 1...20 {
             let image = UIImage(named: String(format: "mono-black-%zd", i))
             refreshingImages.append(image!)
         }
         
         // 其实headerView是一个View 拿出来，更合理
-        let headerView = XWRefreshGifHeader(target: self, action: "upPullLoadData")
+        let headerView = XWRefreshGifHeader(target: self, action: #selector(XWDisplayTableViewController.upPullLoadData))
         
         //这里是 XWRefreshGifHeader 类型,就是gif图片
         headerView.setImages(idleImages, duration: 0.8, state: XWRefreshState.Idle)
@@ -114,7 +114,7 @@ class XWDisplayTableViewController: UITableViewController {
         //延迟执行 模拟网络延迟，实际开发中去掉
         xwDelay(1) { () -> Void in
             
-            for var i = 0 ;  i < 15 ; ++i {
+            for i in 1..<15{
                 self.data.append("数据-\(i + self.data.count)")
             }
             self.tableView.reloadData()
@@ -127,7 +127,7 @@ class XWDisplayTableViewController: UITableViewController {
     func downPlullLoadData(){
         
         xwDelay(1) { () -> Void in
-            for var i = 0 ;  i < 15 ; ++i {
+            for i in 1..<15 {
                 self.data.append("数据-\(i + self.data.count)")
             }
             self.tableView.reloadData()
