@@ -43,7 +43,7 @@ public class XWRefreshComponent: UIView {
     private weak var refreshingTarget:AnyObject!
     
     //4.执行的方法
-    private var refreshingAction:Selector = ""
+    private var refreshingAction:Selector = Selector("")
     
     //5.真正刷新 回调
     var refreshingClosure:XWRefreshComponentRefreshingClosure = {}

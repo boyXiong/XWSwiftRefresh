@@ -96,13 +96,16 @@ public extension UIScrollView {
             var totalCount:Int = 0
             if self.isKindOfClass(UITableView){
                 let tableView = self as! UITableView
-                for var section = 0 ; section < tableView.numberOfSections ; ++section {
+                for section in 0..<tableView.numberOfSections {
+                        
+                
                     totalCount += tableView.numberOfRowsInSection(section)
                 }
                 
             }else if self.isKindOfClass(UICollectionView) {
                 let collectionView = self as! UICollectionView
-                for var section = 0 ; section < collectionView.numberOfSections() ; ++section {
+                for section in 0..<collectionView.numberOfSections() {
+                    
                     totalCount += collectionView.numberOfItemsInSection(section)
                 }
             }
@@ -185,7 +188,7 @@ extension UITableView {
         
         dispatch_once(&once.onceTaken) { () -> Void in
             
-            self.exchangeInstanceMethod1(Selector("reloadData"), method2: Selector("xwReloadData"))
+            self.exchangeInstanceMethod1(#selector(UITableView.reloadData), method2: #selector(UITableView.xwReloadData))
         }
         
     }
