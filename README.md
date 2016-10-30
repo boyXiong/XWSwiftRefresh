@@ -5,7 +5,7 @@
 
 ![](https://raw.githubusercontent.com/boyXiong/raw/master/picture/XWSwiftRefresh/displayHowToUser.gif)
 
-#### 使用方法 支持 Swift2.0 ~ 3.0
+#### 使用方法 支持 Swift2.0 [ 年底会出Swift 4.0 ，等稳定后，更新]
 #### 支持cocoapod 
 ```
 	//在 Podfile 写入
